@@ -1,4 +1,6 @@
 {
     "editor.formatOnSave": true,
-    "source.fixAll.tslint": true
+    "editor.codeActionsOnSave": {
+        "source.fixAll.tslint": true
+    }
 }

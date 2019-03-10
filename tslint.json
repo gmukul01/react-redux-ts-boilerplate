@@ -34,7 +34,8 @@
                     "typeLiterals": "ignore"
                 }
             }
-        ]
+        ],
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
     },
     "exclude": ["node_modules"]
 }
