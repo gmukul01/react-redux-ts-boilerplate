@@ -1,0 +1,45 @@
+{
+    "name": "react-redux-ts-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "type-check": "tsc",
+        "type-check:watch": "npm run type-check -- --watch",
+        "start": "webpack-dev-server --open",
+        "build": "npm run build:types && npm run build:js",
+        "build:types": "tsc --emitDeclarationOnly",
+        "build:js": "webpak --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.3.4",
+        "@babel/plugin-proposal-class-properties": "^7.3.4",
+        "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "@babel/preset-react": "^7.0.0",
+        "@babel/preset-typescript": "^7.3.3",
+        "babel-loader": "^8.0.5",
+        "clean-webpack-plugin": "^2.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "prettier": "^1.16.4",
+        "tslint": "^5.13.1",
+        "tslint-config-airbnb": "^5.11.1",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-react": "^3.6.0",
+        "tslint-react-hooks": "^2.0.0-alpha.1",
+        "typescript": "^3.3.3333",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3",
+        "webpack-dev-server": "^3.2.1"
+    },
+    "dependencies": {
+        "@types/react": "^16.8.7",
+        "@types/react-dom": "^16.8.2",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4"
+    }
+}
