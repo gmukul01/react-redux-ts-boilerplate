@@ -7,7 +7,9 @@
         "build": "npm run build:types && npm run build:js",
         "build:types": "tsc --emitDeclarationOnly",
         "build:js": "webpak --mode production",
-        "lint": "tslint src/**/*.{ts,tsx} -p tsconfig.json",
+        "lint": "run-s lint:**",
+        "lint:ts": "tslint src/**/*.{ts,tsx} -p tsconfig.json",
+        "lint:css": "stylelint src/**/*.{ts,tsx}",
         "start": "webpack-dev-server --open",
         "type-check": "tsc",
         "type-check:watch": "npm run type-check -- --watch"
@@ -23,10 +25,17 @@
         "@babel/preset-env": "^7.3.4",
         "@babel/preset-react": "^7.0.0",
         "@babel/preset-typescript": "^7.3.3",
+        "@types/styled-components": "^4.1.12",
         "babel-loader": "^8.0.5",
+        "babel-plugin-styled-components": "^1.10.0",
         "clean-webpack-plugin": "^2.0.0",
         "html-webpack-plugin": "^3.2.0",
+        "npm-run-all": "^4.1.5",
         "prettier": "^1.16.4",
+        "stylelint": "^9.10.1",
+        "stylelint-config-recommended": "^2.1.0",
+        "stylelint-config-styled-components": "^0.1.1",
+        "stylelint-processor-styled-components": "^1.5.2",
         "tslint": "^5.13.1",
         "tslint-config-airbnb": "^5.11.1",
         "tslint-config-prettier": "^1.18.0",
@@ -42,6 +51,7 @@
         "@types/react": "^16.8.7",
         "@types/react-dom": "^16.8.2",
         "react": "^16.8.4",
-        "react-dom": "^16.8.4"
+        "react-dom": "^16.8.4",
+        "styled-components": "^4.1.3"
     }
 }
