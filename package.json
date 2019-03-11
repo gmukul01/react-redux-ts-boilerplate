@@ -4,12 +4,13 @@
     "description": "",
     "private": true,
     "scripts": {
-        "type-check": "tsc",
-        "type-check:watch": "npm run type-check -- --watch",
-        "start": "webpack-dev-server --open",
         "build": "npm run build:types && npm run build:js",
         "build:types": "tsc --emitDeclarationOnly",
-        "build:js": "webpak --mode production"
+        "build:js": "webpak --mode production",
+        "lint": "tslint src/**/*.{ts,tsx} -p tsconfig.json",
+        "start": "webpack-dev-server --open",
+        "type-check": "tsc",
+        "type-check:watch": "npm run type-check -- --watch"
     },
     "keywords": [],
     "author": "",
@@ -29,6 +30,7 @@
         "tslint": "^5.13.1",
         "tslint-config-airbnb": "^5.11.1",
         "tslint-config-prettier": "^1.18.0",
+        "tslint-plugin-prettier": "^2.0.1",
         "tslint-react": "^3.6.0",
         "tslint-react-hooks": "^2.0.0-alpha.1",
         "typescript": "^3.3.3333",
