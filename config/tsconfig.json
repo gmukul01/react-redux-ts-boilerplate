@@ -1,13 +1,18 @@
 {
     "compilerOptions": {
         "allowJs": true,
+        "lib": ["es2015", "dom"],
         "esModuleInterop": true,
         "isolatedModules": true,
         "jsx": "react",
         "moduleResolution": "node",
         "noEmit": true,
+        "rootDir": "../",
         "strict": true,
-        "target": "esnext"
+        "strictNullChecks": false,
+        "target": "esnext",
+        "types": []
     },
-    "include": ["src"]
+    "include": ["../src"],
+    "exclude": ["../node_modules/"]
 }
