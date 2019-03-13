@@ -1,15 +1,28 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { default as styled } from 'styled-components';
+import { defaultTheme, styled, ThemeProvider } from './theme';
 
 const Text = styled.p`
     color: black;
 `;
 
+const Button = styled.button`
+    background-color: ${({ theme }) => theme.button.solid.primaryColor};
+`;
+
+Button.defaultProps = {
+    theme: defaultTheme
+};
+
 const App = () => {
     return (
         <div>
-            <Text>First Commit</Text>
+            <ThemeProvider theme={defaultTheme}>
+                <>
+                    <Text>First Commit</Text>
+                    <Button>Click Buttoon</Button>
+                </>
+            </ThemeProvider>
         </div>
     );
 };
