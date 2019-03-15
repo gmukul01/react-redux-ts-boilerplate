@@ -14,7 +14,7 @@
         "max-line-length": [true, 140],
         "no-namespace": true,
         "no-reference": true,
-        "no-unused-expression": true,
+        "no-unused-expression": false,
         "object-literal-sort-keys": false,
         "prefer-array-literal": [true, { "allow-type-parameters": true }],
         "prettier": [

@@ -11,7 +11,7 @@
         "strict": true,
         "strictNullChecks": false,
         "target": "esnext",
-        "types": []
+        "types": ["webpack-env"]
     },
     "include": ["../src"],
     "exclude": ["../node_modules/"]

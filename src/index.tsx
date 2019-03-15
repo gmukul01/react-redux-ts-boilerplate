@@ -1,30 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { defaultTheme, styled, ThemeProvider } from './theme';
+import { App, HotApp } from './App';
 
-const Text = styled.p`
-    color: black;
-`;
+const Root = process.env.NODE_ENV === 'production' ? App : HotApp;
 
-const Button = styled.button`
-    background-color: ${({ theme }) => theme.button.solid.primaryColor};
-`;
+ReactDOM.render(<Root />, document.getElementById('root'));
 
-Button.defaultProps = {
-    theme: defaultTheme
-};
-
-const App = () => {
-    return (
-        <div>
-            <ThemeProvider theme={defaultTheme}>
-                <>
-                    <Text>First Commit</Text>
-                    <Button>Click Buttoon</Button>
-                </>
-            </ThemeProvider>
-        </div>
-    );
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
+module.hot && process.env.NODE_ENV === 'production' && module.hot.accept();

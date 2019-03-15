@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
+const SRC = path.resolve(__dirname, '../../src');
 const DIST = path.resolve(__dirname, '../../dist');
 const ENTRY = path.resolve(__dirname, '../../src/index');
 const INDEX_HTML = path.resolve(__dirname, '../../public/index.html');
@@ -16,12 +17,14 @@ module.exports = {
         filename: '[name].[hash].js'
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.json']
+        extensions: ['.ts', '.tsx', '.js', '.json'],
+        symlinks: false
     },
     module: {
         rules: [
             {
                 test: /\.(ts|js)x?$/,
+                include: SRC,
                 exclude: /node_modules/,
                 use: ['babel-loader', 'stylelint-custom-processor-loader']
             }
@@ -36,8 +39,7 @@ module.exports = {
                 removeComments: true
             }
         }),
-        new ForkTsCheckerWebpackPlugin({ tsconfig: TSCONFIG }),
         new webpack.HashedModuleIdsPlugin(),
-        new webpack.HotModuleReplacementPlugin()
+        new ForkTsCheckerWebpackPlugin({ tsconfig: TSCONFIG })
     ]
 };

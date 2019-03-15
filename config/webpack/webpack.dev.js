@@ -1,13 +1,18 @@
 const path = require('path');
 const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
 const webpack = require('webpack');
+const common = require('./webpack.common.js');
 
 const DIST = path.resolve(__dirname, '../../dist');
 
 module.exports = merge(common, {
     mode: 'development',
-    devtool: 'inline-source-map',
+    devtool: 'eval-source-map',
+    resolve: {
+        alias: {
+            'react-dom': '@hot-loader/react-dom'
+        }
+    },
     devServer: {
         contentBase: DIST,
         inline: true,
@@ -15,5 +20,6 @@ module.exports = merge(common, {
         historyApiFallback: true,
         overlay: true,
         stats: { children: false }
-    }
+    },
+    plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()]
 });
