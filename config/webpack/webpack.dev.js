@@ -1,9 +1,6 @@
-const path = require('path');
 const merge = require('webpack-merge');
 const webpack = require('webpack');
 const common = require('./webpack.common.js');
-
-const DIST = path.resolve(__dirname, '../../dist');
 
 module.exports = merge(common, {
     mode: 'development',
@@ -14,11 +11,9 @@ module.exports = merge(common, {
         }
     },
     devServer: {
-        contentBase: DIST,
-        inline: true,
         hot: true,
-        historyApiFallback: true,
         overlay: true,
+        historyApiFallback: true,
         stats: { children: false }
     },
     plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()]

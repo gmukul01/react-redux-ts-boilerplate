@@ -23,10 +23,20 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(ts|js)x?$/,
+                test: /(?<!spec)\.tsx?/,
                 include: SRC,
                 exclude: /node_modules/,
-                use: ['babel-loader', 'stylelint-custom-processor-loader']
+                use: [
+                    {
+                        loader: 'thread-loader',
+                        options: {
+                            workers: 2,
+                            workerParallelJobs: 50
+                        }
+                    },
+                    'babel-loader',
+                    'stylelint-custom-processor-loader'
+                ]
             }
         ]
     },
