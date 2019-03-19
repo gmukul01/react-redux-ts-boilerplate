@@ -1,15 +1,5 @@
 module.exports = function(api) {
-    api.cache(true);
-    const presets = [
-            [
-                '@babel/preset-env',
-                {
-                    modules: false
-                }
-            ],
-            '@babel/preset-typescript',
-            '@babel/preset-react'
-        ],
+    const presets = ['@babel/react', '@babel/typescript'],
         plugins = [
             [
                 'babel-plugin-styled-components',
@@ -23,6 +13,18 @@ module.exports = function(api) {
 
     if (process.env.NODE_ENV === 'development') {
         plugins.push('react-hot-loader/babel');
+    }
+
+    if (api.env('test')) {
+        presets.push(['@babel/env']);
+    } else {
+        presets.push([
+            '@babel/env',
+            {
+                modules: false,
+                targets: { browsers: 'last 2 versions' }
+            }
+        ]);
     }
 
     return { presets, plugins };

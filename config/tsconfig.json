@@ -9,9 +9,10 @@
         "noEmit": true,
         "rootDir": "../",
         "strict": true,
+        "skipLibCheck": true,
         "strictNullChecks": false,
         "target": "esnext",
-        "types": ["webpack-env"]
+        "types": ["webpack-env", "jest"]
     },
     "include": ["../src"],
     "exclude": ["../node_modules/"]

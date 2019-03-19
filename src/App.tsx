@@ -1,6 +1,6 @@
 import { hot } from 'react-hot-loader/root';
 // tslint:disable-next-line: ordered-imports
-import * as React from 'react';
+import React from 'react';
 import { defaultTheme, styled, ThemeProvider } from './theme';
 
 const Text = styled.p`

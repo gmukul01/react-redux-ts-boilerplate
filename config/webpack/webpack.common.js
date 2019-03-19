@@ -23,9 +23,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /(?<!spec)\.tsx?/,
+                test: /\.tsx?$/,
                 include: SRC,
-                exclude: /node_modules/,
+                exclude: [/node_modules/, /\.spec.tsx?$/],
                 use: [
                     {
                         loader: 'thread-loader',
