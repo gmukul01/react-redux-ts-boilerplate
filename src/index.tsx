@@ -6,4 +6,5 @@ const Root = process.env.NODE_ENV === 'production' ? App : HotApp;
 
 ReactDOM.render(<Root />, document.getElementById('root'));
 
+// tslint:disable-next-line: no-unused-expression
 module.hot && process.env.NODE_ENV === 'production' && module.hot.accept();
