@@ -1,18 +1,17 @@
-import { Button } from './types';
+import { ButtonTheme } from './types';
 
-export const button: Button = {
+const button: ButtonTheme = {
     flat: {
-        primaryColor: '#5392f9'
+        textColor: '#5392f9'
     },
     outlined: {
-        contrasColor: '#ffffff',
-        primaryColor: '#5392f9'
+        textColor: '#5392f9',
+        borderColor: '#5392f9'
     },
     solid: {
-        contrasColor: '#ffffff',
-        primaryColor: '#5392f9',
-        secondaryColor: '#75a8f9'
+        textColor: '#ffffff',
+        bgColor: '#5392f9'
     }
 };
 
-export * from './types';
+export default button;

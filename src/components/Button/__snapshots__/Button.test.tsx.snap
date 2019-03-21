@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render properly with flat prop 1`] = `
+.c0 {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #5392f9;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+>
+  Flat Button
+</button>
+`;
+
+exports[`<Button /> should render properly with outlined prop 1`] = `
+.c0 {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #5392f9;
+  color: #5392f9;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+>
+  Outlined Button
+</button>
+`;
+
+exports[`<Button /> should render properly with solid prop 1`] = `
+.c0 {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #5392f9;
+  color: #ffffff;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+>
+  Solid Button
+</button>
+`;

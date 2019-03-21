@@ -1,5 +1,4 @@
-import { Button } from './button';
-
-export interface Theme {
-    button?: Button;
-}
+export * from './button/types';
+export * from './colors/types';
+export * from './font/types';
+export * from './spacing/types';

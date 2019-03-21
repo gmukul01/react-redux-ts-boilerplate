@@ -1,14 +1,13 @@
-export interface Button {
+export interface ButtonTheme {
     flat: {
-        primaryColor: string;
+        textColor: string;
     };
     outlined: {
-        contrasColor: string;
-        primaryColor: string;
+        textColor: string;
+        borderColor: string;
     };
     solid: {
-        contrasColor: string;
-        primaryColor: string;
-        secondaryColor: string;
+        textColor: string;
+        bgColor: string;
     };
 }

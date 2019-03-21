@@ -1,5 +1,9 @@
-import { button } from './button';
+import button from './button';
+import font from './font';
+import spacing from './spacing';
 
 export const defaultTheme = {
-    button
+    button,
+    spacing,
+    font
 };
