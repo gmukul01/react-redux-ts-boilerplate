@@ -1,5 +1,5 @@
 module.exports = {
-    collectCoverageFrom: ['../../src/**/*.(ts|tsx)', '!../../src/theme/**', '!../../node_modules/**'],
+    collectCoverageFrom: ['../../src/**/*.(ts|tsx)', '!../../src/*.(ts|tsx)', '!../../src/theme/**', '!../../node_modules/**'],
     coverageDirectory: '../../coverage/',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
     roots: ['../../src/'],

@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> should render properly with flat prop 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
 .c0 {
   background-color: transparent;
   border: none;
@@ -25,11 +32,22 @@ exports[`<Button /> should render properly with flat prop 1`] = `
 <button
   className="c0"
 >
-  Flat Button
+  <strong
+    className="c1"
+  >
+    Flat Button
+  </strong>
 </button>
 `;
 
 exports[`<Button /> should render properly with outlined prop 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
 .c0 {
   background-color: transparent;
   border: none;
@@ -55,11 +73,22 @@ exports[`<Button /> should render properly with outlined prop 1`] = `
 <button
   className="c0"
 >
-  Outlined Button
+  <strong
+    className="c1"
+  >
+    Outlined Button
+  </strong>
 </button>
 `;
 
 exports[`<Button /> should render properly with solid prop 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
 .c0 {
   background-color: transparent;
   border: none;
@@ -85,6 +114,10 @@ exports[`<Button /> should render properly with solid prop 1`] = `
 <button
   className="c0"
 >
-  Solid Button
+  <strong
+    className="c1"
+  >
+    Solid Button
+  </strong>
 </button>
 `;

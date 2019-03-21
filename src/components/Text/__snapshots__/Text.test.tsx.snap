@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Component should render with all the props 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 200;
+  color: pink;
+  text-transform: uppercase;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+<span
+  className="c0"
+/>
+`;

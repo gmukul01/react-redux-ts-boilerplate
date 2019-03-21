@@ -4,7 +4,5 @@ export interface TextTheme {
     defaults: {
         textWeight?: keyof FontWeightTheme;
         textSize?: keyof FontSizeTheme;
-        textColor?: string;
-        lineThrough?: boolean;
     };
 }

@@ -16,7 +16,7 @@ const getMappedProps = ({ theme: { text, font }, ...props }: Props) => {
     return {
         textSize: font.sizes[textSize || defaults.textSize],
         textWeight: font.weights[textWeight || defaults.textWeight],
-        textColor: textColor || defaults.textColor
+        textColor: textColor || 'inherit'
     };
 };
 
@@ -30,7 +30,5 @@ export const TextStyled = styled('span').attrs(getMappedProps)<StyledProps>`
 `;
 
 TextStyled.defaultProps = {
-    theme: defaultTheme,
-    lineThrough: false,
-    uppercase: false
+    theme: defaultTheme
 };

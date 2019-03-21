@@ -1,3 +1,3 @@
-import { TextStyled as Text } from './Text.styled';
+import Text from './Text';
 
 export default Text;

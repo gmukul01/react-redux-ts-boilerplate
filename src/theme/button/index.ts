@@ -1,16 +1,17 @@
+import colors from '../colors';
 import { ButtonTheme } from './types';
 
 const button: ButtonTheme = {
     flat: {
-        textColor: '#5392f9'
+        textColor: colors.blue[300]
     },
     outlined: {
-        textColor: '#5392f9',
-        borderColor: '#5392f9'
+        textColor: colors.blue[300],
+        borderColor: colors.blue[300]
     },
     solid: {
-        textColor: '#ffffff',
-        bgColor: '#5392f9'
+        textColor: colors.white,
+        bgColor: colors.blue[300]
     }
 };
 
