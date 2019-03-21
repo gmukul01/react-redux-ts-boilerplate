@@ -2,10 +2,11 @@ import * as Themes from './types';
 
 export interface Theme {
     button?: Themes.ButtonTheme;
-    spacing?: Themes.SpacingTheme;
-    font?: Themes.FontTheme;
-    colors?: Themes.Color;
     colorPallet?: Themes.ColorPallet;
+    colors?: Themes.Color;
+    font?: Themes.FontTheme;
+    spacing?: Themes.SpacingTheme;
+    text?: Themes.TextTheme;
 }
 
 export * from './types';

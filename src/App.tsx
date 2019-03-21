@@ -1,13 +1,9 @@
 import { hot } from 'react-hot-loader/root';
 // tslint:disable-next-line: ordered-imports
 import React from 'react';
-import Button from './components/Button';
+import { Button, Text } from './components';
 import { defaultTheme } from './theme';
-import { styled, ThemeProvider } from './utils/styled';
-
-const Text = styled.p`
-    color: black;
-`;
+import { ThemeProvider } from './utils/styled';
 
 export const App = () => {
     return (
