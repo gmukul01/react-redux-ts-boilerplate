@@ -25,7 +25,7 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 include: SRC,
-                exclude: [/node_modules/, /\.spec.tsx?$/],
+                exclude: [/node_modules/, /\.spec.tsx?$/, /\.test.tsx?$/],
                 use: [
                     {
                         loader: 'thread-loader',

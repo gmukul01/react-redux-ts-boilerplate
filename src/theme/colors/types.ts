@@ -8,7 +8,8 @@ export interface Color {
 }
 
 export interface ColorPallet {
-    white: string;
     black: string;
     blue: Color;
+    grey: Color;
+    white: string;
 }

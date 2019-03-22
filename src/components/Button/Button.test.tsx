@@ -5,7 +5,7 @@ import { create } from 'react-test-renderer';
 
 import Button from './Button';
 
-describe('<Button />', () => {
+describe('Button component', () => {
     it('should render properly with flat prop', () => {
         const button = create(<Button flat>Flat Button</Button>);
         expect(button).toMatchSnapshot();

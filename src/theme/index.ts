@@ -5,6 +5,7 @@ export interface Theme {
     colorPallet?: Themes.ColorPallet;
     colors?: Themes.Color;
     font?: Themes.FontTheme;
+    input?: Themes.InputTheme;
     spacing?: Themes.SpacingTheme;
     text?: Themes.TextTheme;
 }

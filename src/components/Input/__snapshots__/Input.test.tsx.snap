@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should render default variant correctly 1`] = `
+.c0 {
+  padding: 10px;
+  font-size: M2;
+  font-weight: Normal;
+  color: #2a2a2e;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+}
+
+.c0:focus {
+  border-color: #5392f9;
+  outline: 0;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #d7d7db;
+}
+
+.c0::-moz-placeholder {
+  color: #d7d7db;
+}
+
+.c0:-ms-input-placeholder {
+  color: #d7d7db;
+}
+
+.c0::placeholder {
+  color: #d7d7db;
+}
+
+<input
+  className="c0"
+  type="email"
+/>
+`;
