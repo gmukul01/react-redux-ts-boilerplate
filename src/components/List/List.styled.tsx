@@ -1,6 +1,6 @@
 /* stylelint-disable  no-descending-specificity*/
-import { defaultTheme, SpacingTheme } from '../../theme';
-import { css, styled } from '../../utils/styled';
+import { defaultTheme, SpacingTheme } from '@theme';
+import { css, styled } from '@utils/styled';
 import { Props } from './types';
 
 const horizontal = (spacings: SpacingTheme) => css`

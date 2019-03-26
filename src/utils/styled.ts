@@ -1,5 +1,5 @@
 import * as styledComponents from 'styled-components';
-import { Theme } from '../theme';
+import { Theme } from '@theme';
 
 // tslint:disable-next-line: no-duplicate-imports
 import { ThemedStyledComponentsModule } from 'styled-components';

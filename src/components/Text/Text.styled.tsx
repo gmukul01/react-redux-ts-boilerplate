@@ -1,5 +1,5 @@
-import { defaultTheme } from '../../theme';
-import { css, styled } from '../../utils/styled';
+import { defaultTheme } from '@theme';
+import { css, styled } from '@utils/styled';
 import { Props, StyledProps } from './types';
 
 const uppercase = () => css`

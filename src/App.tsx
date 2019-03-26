@@ -1,9 +1,9 @@
+import { Button, Input, List, Text } from '@components';
+import { defaultTheme } from '@theme';
+import { ThemeProvider } from '@utils/styled';
+import { hot } from 'react-hot-loader/root';
 // tslint:disable-next-line: ordered-imports
 import React from 'react';
-import { hot } from 'react-hot-loader/root';
-import { Button, Input, List, Text } from './components';
-import { defaultTheme } from './theme';
-import { ThemeProvider } from './utils/styled';
 
 export const App = () => {
     return (

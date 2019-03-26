@@ -2,13 +2,14 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const CircularDependencyPlugin = require('circular-dependency-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 const SRC = path.resolve(__dirname, '../../src');
 const DIST = path.resolve(__dirname, '../../dist');
 const ENTRY = path.resolve(__dirname, '../../src/index');
 const INDEX_HTML = path.resolve(__dirname, '../../public/index.html');
-const TSCONFIG = path.resolve(__dirname, '../tsconfig.json');
 
 module.exports = {
     entry: ENTRY,
@@ -18,7 +19,8 @@ module.exports = {
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.json'],
-        symlinks: false
+        symlinks: false,
+        plugins: [new TsconfigPathsPlugin()]
     },
     module: {
         rules: [
@@ -50,6 +52,9 @@ module.exports = {
             }
         }),
         new webpack.HashedModuleIdsPlugin(),
-        new ForkTsCheckerWebpackPlugin({ tsconfig: TSCONFIG })
+        new ForkTsCheckerWebpackPlugin(),
+        new CircularDependencyPlugin({
+            failOnError: true
+        })
     ]
 };

@@ -1,5 +1,5 @@
-import { FontSizeTheme, FontWeightTheme } from '../../theme';
-import { HTMLProps, WithThemeProp } from '../../utils/types';
+import { FontSizeTheme, FontWeightTheme } from '@theme';
+import { HTMLProps, WithThemeProp } from '@utils/types';
 
 interface Common extends HTMLProps<HTMLElement>, WithThemeProp {
     textColor?: string;

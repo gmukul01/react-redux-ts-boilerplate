@@ -1,5 +1,5 @@
-import { ButtonTheme, defaultTheme } from '../../theme';
-import { css, styled } from '../../utils/styled';
+import { ButtonTheme, defaultTheme } from '@theme';
+import { css, styled } from '@utils/styled';
 import { Props } from './types';
 
 const outlined = (theme: ButtonTheme) => css`

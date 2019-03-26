@@ -1,5 +1,5 @@
 import React from 'react';
-import { WithStyle } from '../../utils/types';
+import { WithStyle } from '@utils/types';
 import { TextStyled } from './Text.styled';
 import { Props } from './types';
 

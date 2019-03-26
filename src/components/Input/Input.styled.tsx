@@ -1,5 +1,5 @@
-import { defaultTheme } from '../../theme';
-import { styled } from '../../utils/styled';
+import { defaultTheme } from '@theme';
+import { styled } from '@utils/styled';
 import { Props } from './types';
 
 export const InputStyled = styled('input').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<Props>`

@@ -1,10 +1,10 @@
 import React from 'react';
-import { WithStyle } from '../../utils/types';
+import { WithStyle } from '@utils/types';
 import Text from '../Text';
 import { ButtonStyled } from './Button.styled';
 import { Props } from './types';
 
-import { isValidStringOrNumber } from '../../utils/helpers/ReactHelper';
+import { isValidStringOrNumber } from '@utils/helpers/ReactHelper';
 
 const Button: React.FunctionComponent<Props> & WithStyle = props => {
     return (

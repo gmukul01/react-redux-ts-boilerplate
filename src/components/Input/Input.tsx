@@ -1,5 +1,5 @@
 import React from 'react';
-import { WithStyle } from '../../utils/types';
+import { WithStyle } from '@utils/types';
 import { InputStyled } from './Input.styled';
 import { Props } from './types';
 
