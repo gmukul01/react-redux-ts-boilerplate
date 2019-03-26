@@ -1,7 +1,8 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-module.exports = merge(common, {
+const config = {
     mode: 'production',
     optimization: {
         runtimeChunk: 'single',
@@ -15,4 +16,8 @@ module.exports = merge(common, {
             }
         }
     }
-});
+};
+
+if (process.env.BUNDLE_ANALYZE) config.plugins = [new BundleAnalyzerPlugin()];
+
+module.exports = merge(common, config);

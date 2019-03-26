@@ -5,7 +5,8 @@
     "private": true,
     "sideEffects": false,
     "scripts": {
-        "build": "webpack --config config/webpack/webpack.prod.js",
+        "build": "webpack --progress --config config/webpack/webpack.prod.js",
+        "build:analyze": "set BUNDLE_ANALYZE=true && npm run build",
         "lint:css": "stylelint src/**/*.{ts,tsx}",
         "lint:ts": "tslint src/**/*.{ts,tsx} -p config/tsconfig.json",
         "lint": "run-s lint:**",
@@ -71,6 +72,7 @@
         "tslint-react-hooks": "^2.0.0-alpha.1",
         "typescript": "^3.3.3333",
         "webpack": "^4.29.6",
+        "webpack-bundle-analyzer": "^3.1.0",
         "webpack-cli": "^3.2.3",
         "webpack-dev-server": "^3.2.1",
         "webpack-merge": "^4.2.1"
