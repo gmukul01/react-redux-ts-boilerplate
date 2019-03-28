@@ -11,6 +11,7 @@
         "strict": true,
         "skipLibCheck": true,
         "strictNullChecks": false,
+        "strictFunctionTypes": false,
         "target": "esnext",
         "types": ["webpack-env", "jest"],
         "baseUrl": "src",
