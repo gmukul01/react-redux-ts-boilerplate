@@ -2,7 +2,7 @@ import { ADD_TODO, TodoActionTypes, Todos, TOGGLE_TODO } from './types';
 
 export const initialState: Todos = [];
 
-export const todos = (state = initialState, action: TodoActionTypes): Todos => {
+export const todos = (state: Todos = initialState, action: TodoActionTypes): Todos => {
     switch (action.type) {
         case ADD_TODO:
             return [
