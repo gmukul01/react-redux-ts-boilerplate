@@ -4,8 +4,8 @@ import { Props } from './types';
 
 export const InputStyled = styled('input').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<Props>`
     padding: 10px;
-    font-size: ${props => props.text.defaults.textSize};
-    font-weight: ${props => props.text.defaults.textWeight};
+    font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
+    font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
     color: ${props => props.input.color};
     background-color: ${props => props.input.bgColor};
     background-clip: padding-box;
