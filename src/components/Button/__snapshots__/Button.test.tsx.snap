@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> should render properly with flat prop 1`] = `
+exports[`Button component should render properly with flat prop 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 700;
@@ -40,7 +40,7 @@ exports[`<Button /> should render properly with flat prop 1`] = `
 </button>
 `;
 
-exports[`<Button /> should render properly with outlined prop 1`] = `
+exports[`Button component should render properly with outlined prop 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 700;
@@ -81,7 +81,7 @@ exports[`<Button /> should render properly with outlined prop 1`] = `
 </button>
 `;
 
-exports[`<Button /> should render properly with solid prop 1`] = `
+exports[`Button component should render properly with solid prop 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 700;

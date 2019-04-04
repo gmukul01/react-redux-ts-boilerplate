@@ -3,8 +3,8 @@
 exports[`Input component should render default variant correctly 1`] = `
 .c0 {
   padding: 10px;
-  font-size: M2;
-  font-weight: Normal;
+  font-size: 14px;
+  font-weight: 400;
   color: #2a2a2e;
   background-color: #ffffff;
   background-clip: padding-box;

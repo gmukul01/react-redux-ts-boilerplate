@@ -12,7 +12,7 @@
         "lint": "run-s lint:**",
         "test": "run-p type-check test:jest",
         "test:update": "run-p type-check \"test:jest -- -u\"",
-        "type-check": "tsc --p config/tsconfig.json",
+        "type-check": "tsc",
         "test:jest": "jest --config config/jest/jest.config.js",
         "watch": "webpack-dev-server --open --config config/webpack/webpack.dev.js"
     },

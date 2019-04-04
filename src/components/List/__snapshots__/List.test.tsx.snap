@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component should render horizontal list 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+}
+
+.c0 li * {
+  display: inline;
+  margin: 0px 4px;
+}
+
+.c0 li:last-child * {
+  margin-right: 8px;
+}
+
+.c0 li:first-child * {
+  margin-left: 8px;
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <p>
+      item 1
+    </p>
+  </li>
+  <li>
+    <p>
+      item 2
+    </p>
+  </li>
+</ul>
+`;
+
+exports[`List component should render vertical list 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+}
+
+.c0 li * {
+  display: block;
+  margin: 4px 0px;
+}
+
+.c0 li:last-child * {
+  margin-bottom: 8px;
+}
+
+.c0 li:first-child * {
+  margin-top: 8px;
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <p>
+      item 1
+    </p>
+  </li>
+  <li>
+    <p>
+      item 2
+    </p>
+  </li>
+</ul>
+`;
