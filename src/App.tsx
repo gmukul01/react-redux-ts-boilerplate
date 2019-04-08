@@ -1,4 +1,4 @@
-import { Button, Input, List, Text } from '@components';
+import { TodoForm, TodoList } from '@containers';
 import { defaultTheme } from '@theme';
 import { ThemeProvider } from '@utils/styled';
 import { hot } from 'react-hot-loader/root';
@@ -9,12 +9,8 @@ export const App = () => {
     return (
         <ThemeProvider theme={defaultTheme}>
             <>
-                <Input placeholder="Enter Item" />
-                <Button solid>Add Todo</Button>
-                <List>
-                    <Text>Todo 1</Text>
-                    <Text>Todo 2</Text>
-                </List>
+                <TodoForm />
+                <TodoList />
             </>
         </ThemeProvider>
     );

@@ -16,7 +16,12 @@ module.exports = function(api) {
     }
 
     if (api.env('test')) {
-        presets.push(['@babel/env']);
+        presets.push([
+            '@babel/env',
+            {
+                modules: 'commonjs'
+            }
+        ]);
     } else {
         presets.push([
             '@babel/env',

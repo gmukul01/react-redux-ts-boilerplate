@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList component should render with given todos 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+}
+
+.c0 li * {
+  display: block;
+  margin: 4px 0px;
+}
+
+.c0 li:last-child * {
+  margin-bottom: 8px;
+}
+
+.c0 li:first-child * {
+  margin-top: 8px;
+}
+
+.c1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+<div>
+  <ul
+    class="c0"
+  >
+    <li>
+      <span
+        class="c1"
+      >
+        Random
+      </span>
+    </li>
+  </ul>
+</div>
+`;

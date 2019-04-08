@@ -15,12 +15,11 @@ module.exports = {
     testMatch: ['**/*.(spec|test).(ts|tsx)'],
     verbose: true,
     moduleNameMapper: {
-        '^@components': '<rootDir>/src/components',
-        '^@components/(.*)': '<rootDir>/src/components/$1',
-        '^@store': '<rootDir>/src/store',
-        '^@store/(.*)': '<rootDir>/src/store/$1',
-        '^@theme': '<rootDir>/src/theme/index.ts',
-        '^@theme/(.*)': '<rootDir>/src/theme/$1',
-        '^@utils/(.*)': '<rootDir>/src/utils/$1'
+        '^@styled': '<rootDir>/src/utils/styled',
+        '^@components(.*)$': '<rootDir>/src/components$1',
+        '^@containers(.*)$': '<rootDir>/src/containers$1',
+        '^@store(.*)$': '<rootDir>/src/store$1',
+        '^@theme(.*)$': '<rootDir>/src/theme$1',
+        '^@utils(.*)$': '<rootDir>/src/utils$1'
     }
 };

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList Container should have todos prop as per the store 1`] = `
+<div>
+  <ul
+    class="Liststyled__ListStyled-sc-1xwxn1f-0 iMJZRg"
+  >
+    <li>
+      <span
+        class="Textstyled__TextStyled-ms09cy-0 dzitEA"
+      >
+        Random
+      </span>
+    </li>
+  </ul>
+</div>
+`;

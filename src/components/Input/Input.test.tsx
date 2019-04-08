@@ -1,4 +1,3 @@
-import { shallow } from 'enzyme';
 import 'jest-styled-components';
 import React from 'react';
 import { create } from 'react-test-renderer';

@@ -1,12 +1,14 @@
 import { ADD_TODO, AddTodoAction, TOGGLE_TODO, ToggleTodoAction } from './types';
 
-export const addTodo = (id: string, text: string): AddTodoAction => ({
-    id,
+let nextTodoId = 0;
+
+export const addTodo = (text: string): AddTodoAction => ({
     text,
+    id: nextTodoId++,
     type: ADD_TODO
 });
 
-export const toggleTodo = (id: string): ToggleTodoAction => ({
+export const toggleTodo = (id: number): ToggleTodoAction => ({
     id,
     type: TOGGLE_TODO
 });

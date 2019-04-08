@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodo component should render 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.c1 {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #5392f9;
+  color: #ffffff;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c0 {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2a2a2e;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+}
+
+.c0:focus {
+  border-color: #5392f9;
+  outline: 0;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #d7d7db;
+}
+
+.c0::-moz-placeholder {
+  color: #d7d7db;
+}
+
+.c0:-ms-input-placeholder {
+  color: #d7d7db;
+}
+
+.c0::placeholder {
+  color: #d7d7db;
+}
+
+<div>
+  <form>
+    <input
+      class="c0"
+      placeholder="Enter Todo"
+    />
+    <button
+      class="c1"
+      type="submit"
+    >
+      <strong
+        class="c2"
+      >
+        Add Todo
+      </strong>
+    </button>
+  </form>
+</div>
+`;

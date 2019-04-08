@@ -5,16 +5,16 @@ describe('Todos reducer', () => {
     const state = [
         {
             completed: false,
-            id: '1',
+            id: 0,
             text: 'Buy Table'
         }
     ];
 
     it('should handle ADD_TODO action', () => {
-        expect(todos(initialState, addTodo('1', 'Buy Table'))).toEqual(state);
+        expect(todos(initialState, addTodo('Buy Table'))).toEqual(state);
     });
 
     it('should handle TOGGLE_TODO action', () => {
-        expect(todos(state, toggleTodo('1'))).toEqual([{ ...state[0], completed: true }]);
+        expect(todos(state, toggleTodo(0))).toEqual([{ ...state[0], completed: true }]);
     });
 });

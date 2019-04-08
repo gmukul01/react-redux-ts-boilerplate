@@ -16,8 +16,11 @@
         "types": ["webpack-env", "jest"],
         "baseUrl": "src",
         "paths": {
+            "@styled": ["./utils/styled"],
             "@components": ["./components"],
             "@components/*": ["./components/*"],
+            "@containers": ["./containers"],
+            "@containers/*": ["./containers/*"],
             "@store": ["./store"],
             "@store/*": ["./store/*"],
             "@theme": ["./theme"],
