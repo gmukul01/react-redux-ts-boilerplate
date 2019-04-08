@@ -3,7 +3,7 @@
 exports[`TodoList Container should have todos prop as per the store 1`] = `
 <div>
   <ul
-    class="Liststyled__ListStyled-sc-1xwxn1f-0 iMJZRg"
+    class="Liststyled__ListStyled-sc-1xwxn1f-0 RMkOJ"
   >
     <li>
       <span

@@ -28,6 +28,8 @@ export interface FontFaceItem {
 }
 
 export interface FontTheme {
+    defaultColor: string;
+    defaultFontFamily: string;
     sizes: FontSizeTheme;
     weights: FontWeightTheme;
     faces: FontFaceTheme[];

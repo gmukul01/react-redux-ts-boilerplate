@@ -4,6 +4,7 @@ exports[`TodoList component should render with given todos 1`] = `
 .c0 {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .c0 li * {

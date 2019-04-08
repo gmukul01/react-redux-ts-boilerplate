@@ -44,6 +44,7 @@ const vertical = (spacings: SpacingTheme) => css`
 const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) => ({ spacings }))<Props>`
     padding: 0;
     margin: 0;
+    list-style-type: none;
 
     ${({ spacings, variant }) => variant === 'horizontal' && horizontal(spacings)};
     ${({ spacings, variant }) => variant === 'vertical' && vertical(spacings)};
