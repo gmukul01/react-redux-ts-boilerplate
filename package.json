@@ -8,7 +8,7 @@
         "build": "webpack --progress --config config/webpack/webpack.prod.js",
         "build:analyze": "set BUNDLE_ANALYZE=true && npm run build",
         "lint:css": "stylelint src/**/*.{ts,tsx}",
-        "lint:ts": "tslint src/**/*.{ts,tsx} -p config/tsconfig.json",
+        "lint:ts": "tslint src/**/*.{ts,tsx} -p tsconfig.json",
         "lint": "run-s lint:**",
         "test": "run-p type-check test:jest",
         "test:update": "run-p type-check \"test:jest -- -u\"",
