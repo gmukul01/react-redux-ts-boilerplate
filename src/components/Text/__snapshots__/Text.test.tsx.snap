@@ -1,5 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Text Component should render span element by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+<div>
+  <span
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Text Component should render strong element for strong 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+}
+
+<div>
+  <strong
+    class="c0"
+  />
+</div>
+`;
+
 exports[`Text Component should render with all the props 1`] = `
 .c0 {
   font-size: 14px;
@@ -10,7 +38,9 @@ exports[`Text Component should render with all the props 1`] = `
   text-decoration: line-through;
 }
 
-<span
-  className="c0"
-/>
+<div>
+  <span
+    class="c0"
+  />
+</div>
 `;

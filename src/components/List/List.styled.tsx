@@ -41,7 +41,7 @@ const vertical = (spacings: SpacingTheme) => css`
     }
 `;
 
-const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) => ({ spacings }))<Props>`
+export const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) => ({ spacings }))<Props>`
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -53,5 +53,3 @@ const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) => ({ s
 ListStyled.defaultProps = {
     theme: defaultTheme
 };
-
-export { ListStyled };

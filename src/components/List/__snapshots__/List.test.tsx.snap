@@ -20,20 +20,22 @@ exports[`List component should render horizontal list 1`] = `
   margin-left: 8px;
 }
 
-<ul
-  className="c0"
->
-  <li>
-    <p>
-      item 1
-    </p>
-  </li>
-  <li>
-    <p>
-      item 2
-    </p>
-  </li>
-</ul>
+<div>
+  <ul
+    class="c0"
+  >
+    <li>
+      <p>
+        item 1
+      </p>
+    </li>
+    <li>
+      <p>
+        item 2
+      </p>
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`List component should render vertical list 1`] = `
@@ -56,18 +58,20 @@ exports[`List component should render vertical list 1`] = `
   margin-top: 8px;
 }
 
-<ul
-  className="c0"
->
-  <li>
-    <p>
-      item 1
-    </p>
-  </li>
-  <li>
-    <p>
-      item 2
-    </p>
-  </li>
-</ul>
+<div>
+  <ul
+    class="c0"
+  >
+    <li>
+      <p>
+        item 1
+      </p>
+    </li>
+    <li>
+      <p>
+        item 2
+      </p>
+    </li>
+  </ul>
+</div>
 `;

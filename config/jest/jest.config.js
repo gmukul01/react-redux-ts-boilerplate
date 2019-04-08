@@ -16,6 +16,7 @@ module.exports = {
     verbose: true,
     moduleNameMapper: {
         '^@styled': '<rootDir>/src/utils/styled',
+        '^@test-utils': '<rootDir>/src/utils/test-utils',
         '^@components(.*)$': '<rootDir>/src/components$1',
         '^@containers(.*)$': '<rootDir>/src/containers$1',
         '^@store(.*)$': '<rootDir>/src/store$1',

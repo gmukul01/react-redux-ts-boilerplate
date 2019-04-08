@@ -1,6 +1,6 @@
+import { fireEvent, render } from '@test-utils';
 import 'jest-styled-components';
 import React from 'react';
-import { fireEvent, render } from 'react-testing-library';
 
 import TodoForm from './TodoForm';
 

@@ -16,7 +16,7 @@ const flat = (theme: ButtonTheme) => css`
     color: ${theme.flat.textColor};
 `;
 
-const ButtonStyled = styled('button')<Props>`
+export const ButtonStyled = styled('button')<Props>`
     background-color: transparent;
     border: none;
     padding: 10px;
@@ -40,5 +40,3 @@ const ButtonStyled = styled('button')<Props>`
 ButtonStyled.defaultProps = {
     theme: defaultTheme
 };
-
-export { ButtonStyled };

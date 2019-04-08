@@ -17,6 +17,7 @@
         "baseUrl": "src",
         "paths": {
             "@styled": ["./utils/styled"],
+            "@test-utils": ["./utils/test-utils"],
             "@components": ["./components"],
             "@components/*": ["./components/*"],
             "@containers": ["./containers"],

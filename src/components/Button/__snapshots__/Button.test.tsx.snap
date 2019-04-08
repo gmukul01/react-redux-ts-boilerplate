@@ -29,15 +29,17 @@ exports[`Button component should render properly with flat prop 1`] = `
   outline: none;
 }
 
-<button
-  className="c0"
->
-  <strong
-    className="c1"
+<div>
+  <button
+    class="c0"
   >
-    Flat Button
-  </strong>
-</button>
+    <strong
+      class="c1"
+    >
+      Flat Button
+    </strong>
+  </button>
+</div>
 `;
 
 exports[`Button component should render properly with outlined prop 1`] = `
@@ -70,15 +72,17 @@ exports[`Button component should render properly with outlined prop 1`] = `
   outline: none;
 }
 
-<button
-  className="c0"
->
-  <strong
-    className="c1"
+<div>
+  <button
+    class="c0"
   >
-    Outlined Button
-  </strong>
-</button>
+    <strong
+      class="c1"
+    >
+      Outlined Button
+    </strong>
+  </button>
+</div>
 `;
 
 exports[`Button component should render properly with solid prop 1`] = `
@@ -111,13 +115,64 @@ exports[`Button component should render properly with solid prop 1`] = `
   outline: none;
 }
 
-<button
-  className="c0"
->
-  <strong
-    className="c1"
+<div>
+  <button
+    class="c0"
   >
-    Solid Button
-  </strong>
-</button>
+    <strong
+      class="c1"
+    >
+      Solid Button
+    </strong>
+  </button>
+</div>
+`;
+
+exports[`Button component should wrap children into Text component when rendering string or number 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.c0 {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #5392f9;
+  color: #ffffff;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <strong
+      class="c1"
+    >
+      Some text
+    </strong>
+    <i>
+      some icon
+    </i>
+    <div>
+      element2
+    </div>
+  </button>
+</div>
 `;

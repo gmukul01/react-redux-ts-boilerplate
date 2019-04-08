@@ -1,5 +1,5 @@
-import React from 'react';
 import { WithStyle } from '@utils/types';
+import React from 'react';
 import Text from '../Text';
 import { ButtonStyled } from './Button.styled';
 import { Props } from './types';

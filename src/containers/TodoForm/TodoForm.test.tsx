@@ -1,6 +1,6 @@
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Provider } from 'react-redux';
-import { fireEvent, render } from 'react-testing-library';
 import reduxMockStore from 'redux-mock-store';
 import TodoForm from './TodoForm';
 

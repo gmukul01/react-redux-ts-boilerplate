@@ -34,8 +34,10 @@ exports[`Input component should render default variant correctly 1`] = `
   color: #d7d7db;
 }
 
-<input
-  className="c0"
-  type="email"
-/>
+<div>
+  <input
+    class="c0"
+    type="email"
+  />
+</div>
 `;
