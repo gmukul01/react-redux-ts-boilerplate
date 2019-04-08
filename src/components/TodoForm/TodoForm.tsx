@@ -1,7 +1,7 @@
 import Button from '@components/Button';
 import Input from '@components/Input';
+import { Props } from '@containers/TodoForm/types';
 import React, { FormEvent, useRef } from 'react';
-import { Props } from './types';
 
 const TodoForm: React.FunctionComponent<Props> = ({ addTodo }) => {
     const inputEl = useRef<HTMLInputElement>(null);

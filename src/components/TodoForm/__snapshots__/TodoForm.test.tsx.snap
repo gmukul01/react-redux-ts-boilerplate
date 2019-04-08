@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddTodo component should render 1`] = `
+exports[`TodoForm component should render 1`] = `
 .c2 {
   font-size: 14px;
   font-weight: 700;

@@ -4,7 +4,7 @@ import { fireEvent, render } from 'react-testing-library';
 import reduxMockStore from 'redux-mock-store';
 import TodoForm from './TodoForm';
 
-describe('TodoList Container', () => {
+describe('TodoForm Container', () => {
     const mockStore = reduxMockStore(),
         store = mockStore({}),
         { getByPlaceholderText, getByText } = render(

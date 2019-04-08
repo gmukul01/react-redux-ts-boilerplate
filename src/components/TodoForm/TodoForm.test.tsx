@@ -4,7 +4,7 @@ import { fireEvent, render } from 'react-testing-library';
 
 import TodoForm from './TodoForm';
 
-describe('AddTodo component', () => {
+describe('TodoForm component', () => {
     const mockAddTodo = jest.fn();
 
     it('should render', () => {
