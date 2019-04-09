@@ -1,7 +1,10 @@
-import { Action } from 'redux';
-
-export const ADD_TODO = 'ADD_TODO';
-export const TOGGLE_TODO = 'TOGGLE_TODO';
+export enum TodoActionTypes {
+    ADD_TODO = '@@todos/ADD_TODO',
+    TOGGLE_TODO = '@@todos/TOGGLE_TODO',
+    FETCH_REQUEST = '@@todos/FETCH_REQUEST',
+    FETCH_SUCCESS = '@@todos/FETCH_REQUEST',
+    FETCH_ERROR = '@@todos/FETCH_ERROR'
+}
 
 export interface Todo {
     id: number;
@@ -10,16 +13,3 @@ export interface Todo {
 }
 
 export type Todos = Todo[];
-
-export interface AddTodoAction extends Action {
-    type: typeof ADD_TODO;
-    id: number;
-    text: string;
-}
-
-export interface ToggleTodoAction extends Action {
-    type: typeof TOGGLE_TODO;
-    id: number;
-}
-
-export type TodoActionTypes = AddTodoAction | ToggleTodoAction;

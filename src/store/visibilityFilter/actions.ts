@@ -1,6 +1,6 @@
-import { SET_VISIBILITY_FILTER, VisibilityFilter, VisibilityFilterAction } from './types';
+import { SET_VISIBILITY_FILTER, VisibilityFilterType } from './types';
 
-export const setVisibilityFilter = (filter: VisibilityFilter): VisibilityFilterAction => ({
+export const setVisibilityFilter = (filter: VisibilityFilterType) => ({
     filter,
     type: SET_VISIBILITY_FILTER
 });

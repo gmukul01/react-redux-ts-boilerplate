@@ -1,11 +1,11 @@
-import { Todos, ToggleTodoAction } from '@store/todos';
+import { Todos, toggleTodo } from '@store/todos';
 
 export interface StateProps {
     todos: Todos;
 }
 
 export interface DispatchProps {
-    toggleTodo: (id: number) => ToggleTodoAction;
+    toggleTodo: typeof toggleTodo;
 }
 
 // We can merge all props here StateProps & DispatchProps & OwnProps and use this in the component

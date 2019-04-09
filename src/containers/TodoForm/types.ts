@@ -1,7 +1,7 @@
-import { AddTodoAction } from '@store/todos';
+import { addTodo } from '@store/todos';
 
 export interface DispatchProps {
-    addTodo: (text: string) => AddTodoAction;
+    addTodo: typeof addTodo;
 }
 
 // We can merge all props here StateProps & DispatchProps & OwnProps and use this in the component
