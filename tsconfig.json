@@ -20,6 +20,7 @@
             "@test-utils": ["./utils/test-utils"],
             "@components": ["./components"],
             "@components/*": ["./components/*"],
+            "@constants/*": ["./constants/*"],
             "@containers": ["./containers"],
             "@containers/*": ["./containers/*"],
             "@store": ["./store"],

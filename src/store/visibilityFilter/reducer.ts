@@ -1,9 +1,9 @@
 import { Reducer } from 'redux';
-import { SET_VISIBILITY_FILTER, VisibilityFilterType } from './types';
+import { SET_VISIBILITY_FILTER, VisibilityFilterAction, VisibilityFilterType } from './types';
 
 export const initialState: VisibilityFilterType = 'SHOW_ALL';
 
-export const visibilityFilter: Reducer<VisibilityFilterType> = (state = initialState, action) => {
+export const visibilityFilter: Reducer<VisibilityFilterType, VisibilityFilterAction> = (state = initialState, action) => {
     switch (action.type) {
         case SET_VISIBILITY_FILTER:
             return action.filter;

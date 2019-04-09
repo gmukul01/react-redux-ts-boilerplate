@@ -6,13 +6,17 @@ import TodoList from './TodoList';
 
 describe('TodoList Container', () => {
     const initialState = {
-            todos: [
-                {
-                    id: 1,
-                    text: 'Random',
-                    completed: false
-                }
-            ]
+            todos: {
+                loading: false,
+                data: [
+                    {
+                        id: 1,
+                        title: 'Random',
+                        completed: false
+                    }
+                ],
+                error: ''
+            }
         },
         mockStore = reduxMockStore(),
         store = mockStore(initialState),
@@ -26,8 +30,13 @@ describe('TodoList Container', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should dispatch fetch todo action on mount of the component', () => {
+        const expectedAction = [{ type: '@@todos/FETCH_REQUEST' }];
+        expect(store.getActions()).toEqual(expectedAction);
+    });
+
     it('should dispatch toggle todo action on click of todo text', () => {
-        const expectedAction = [{ id: 1, type: 'TOGGLE_TODO' }],
+        const expectedAction = [{ type: '@@todos/FETCH_REQUEST' }, { id: 1, type: '@@todos/TOGGLE_TODO' }],
             todo = getByText('Random');
 
         fireEvent.click(todo);

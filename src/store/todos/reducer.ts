@@ -1,21 +1,45 @@
 import { Reducer } from 'redux';
-import { TodoActionTypes, Todos } from './types';
+import { TodoActions, TodoActionTypes, TodosState } from './types';
 
-export const initialState: Todos = [];
+export const initialState: TodosState = {
+    loading: false,
+    data: [],
+    error: ''
+};
 
-export const todos: Reducer<Todos> = (state = initialState, action) => {
+export const todos: Reducer<TodosState, TodoActions> = (state = initialState, action) => {
     switch (action.type) {
         case TodoActionTypes.ADD_TODO:
-            return [
+            return {
                 ...state,
-                {
-                    id: action.id,
-                    text: action.text,
-                    completed: false
-                }
-            ];
+                data: [
+                    {
+                        id: action.id,
+                        title: action.title,
+                        completed: false
+                    },
+                    ...state.data
+                ]
+            };
         case TodoActionTypes.TOGGLE_TODO:
-            return state.map(todo => (todo.id === action.id ? { ...todo, completed: !todo.completed } : todo));
+            return {
+                ...state,
+                data: state.data.map(todo => (todo.id === action.id ? { ...todo, completed: !todo.completed } : todo))
+            };
+
+        case TodoActionTypes.FETCH_SUCCESS:
+            return {
+                ...initialState,
+                data: [...state.data, ...action.todos.map(({ id, title, completed }) => ({ id, title, completed }))]
+            };
+
+        case TodoActionTypes.FETCH_ERROR:
+            return {
+                ...state,
+                loading: false,
+                error: action.message
+            };
+
         default:
             return state;
     }

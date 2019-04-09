@@ -8,18 +8,23 @@ describe('TodoList component', () => {
     const todos = [
             {
                 id: 1,
-                text: 'Random',
+                title: 'Random',
                 completed: false
             }
         ],
         mockToggleTodo = jest.fn(),
-        { container, getByText } = render(<TodoList todos={todos} toggleTodo={mockToggleTodo} />);
+        mockfetchTodos = jest.fn(),
+        { container, getByText } = render(<TodoList todos={todos} toggleTodo={mockToggleTodo} fetchTodos={mockfetchTodos} />);
 
     it('should render with given todos', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should call toggle todo prop with expected id', () => {
+    it('shopuld call fetch todos on mount', () => {
+        expect(mockfetchTodos).toHaveBeenCalled();
+    });
+
+    it('should call toggle todo prop with expected id when click on todo', () => {
         const todo = getByText('Random');
         fireEvent.click(todo);
         expect(mockToggleTodo).toHaveBeenCalledWith(1);

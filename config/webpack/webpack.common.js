@@ -12,7 +12,7 @@ const ENTRY = path.resolve(__dirname, '../../src/index');
 const INDEX_HTML = path.resolve(__dirname, '../../public/index.html');
 
 module.exports = {
-    entry: ENTRY,
+    entry: ['@babel/polyfill', ENTRY],
     output: {
         path: DIST,
         filename: '[name].[hash].js'
@@ -55,6 +55,9 @@ module.exports = {
         new ForkTsCheckerWebpackPlugin(),
         new CircularDependencyPlugin({
             failOnError: true
+        }),
+        new webpack.DefinePlugin({
+            API_BASE_URL: JSON.stringify('https://my-json-server.typicode.com/gmukul01/demo')
         })
     ]
 };

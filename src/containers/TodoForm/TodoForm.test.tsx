@@ -14,7 +14,7 @@ describe('TodoForm Container', () => {
         );
 
     it('should dispatch addTodo action on click of add todo button', () => {
-        const expectedAction = [{ id: 0, text: 'Random', type: 'ADD_TODO' }],
+        const expectedAction = [{ id: 5, title: 'Random', type: '@@todos/ADD_TODO' }],
             addTodoInput = getByPlaceholderText('Enter Todo'),
             submitButton = getByText('Add Todo');
 
