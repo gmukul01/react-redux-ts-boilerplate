@@ -16,5 +16,5 @@ module.exports = merge(common, {
         historyApiFallback: true,
         stats: { children: false }
     },
-    plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()]
+    plugins: [new webpack.HotModuleReplacementPlugin()]
 });

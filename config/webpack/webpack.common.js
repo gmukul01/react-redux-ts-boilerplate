@@ -51,7 +51,6 @@ module.exports = {
                 removeComments: true
             }
         }),
-        new webpack.HashedModuleIdsPlugin(),
         new ForkTsCheckerWebpackPlugin(),
         new CircularDependencyPlugin({
             failOnError: true
