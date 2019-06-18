@@ -1,4 +1,4 @@
-import colors from '@theme/colors';
+import colors from '../colors';
 import faces from './faces';
 import sizes from './sizes';
 import { FontTheme } from './types';

@@ -1,4 +1,3 @@
-import colors from '../colors';
 import { TextTheme } from './types';
 
 const text: TextTheme = {
