@@ -15,7 +15,8 @@ module.exports = {
     entry: ['@babel/polyfill', ENTRY],
     output: {
         path: DIST,
-        filename: '[name].[hash].js'
+        filename: '[name].[hash].js',
+        publicPath: '/'
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.json'],
@@ -24,6 +25,21 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: '@svgr/webpack',
+                        options: {
+                            icon: true
+                        }
+                    }
+                ]
+            },
             {
                 test: /\.tsx?$/,
                 include: SRC,

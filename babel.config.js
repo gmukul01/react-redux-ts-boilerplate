@@ -8,7 +8,8 @@ module.exports = function(api) {
                 }
             ],
             '@babel/proposal-class-properties',
-            '@babel/proposal-object-rest-spread'
+            '@babel/proposal-object-rest-spread',
+            'inline-react-svg'
         ];
 
     if (process.env.NODE_ENV === 'development') {

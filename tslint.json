@@ -9,7 +9,7 @@
     ],
     "rulesDirectory": ["tslint-plugin-prettier"],
     "rules": {
-        "import-name": [true, { "react": "React" }],
+        "import-name": false,
         "interface-name": [true, "never-prefix"],
         "jsx-boolean-value": false,
         "jsx-no-multiline-js": false,
@@ -17,6 +17,7 @@
         "no-increment-decrement": false,
         "no-namespace": true,
         "no-reference": true,
+        "no-unused-expression": [true, "allow-fast-null-checks"],
         "object-literal-sort-keys": false,
         "one-variable-per-declaration": false,
         "prefer-array-literal": [true, { "allow-type-parameters": true }],
